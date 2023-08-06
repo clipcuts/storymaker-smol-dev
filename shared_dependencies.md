@@ -1,42 +1,21 @@
-Shared Dependencies:
+1. "react": This is a JavaScript library for building user interfaces. It is used in all the files that contain JSX code.
 
-1. Exported Variables:
-   - `gedcomData`: The data extracted from the uploaded GEDCOM file.
-   - `mainCharacter`: The main character selected by the user.
-   - `movieData`: The data of the movie being created, including slides and their settings.
-   - `renderProgress`: The progress of the movie rendering process.
+2. "next": This is a React framework that enables features such as server-side rendering and generating static websites. It is used in all the files.
 
-2. Data Schemas:
-   - `GedcomSchema`: The schema for the GEDCOM data.
-   - `CharacterSchema`: The schema for the main character data.
-   - `SlideSchema`: The schema for the slide data.
-   - `MovieSchema`: The schema for the movie data.
+3. "gedcom": This is an npm module used for processing GEDCOM data. It is used in the "gedcomProcessor.js" file.
 
-3. ID Names of DOM Elements:
-   - `fileInput`: The file input for the GEDCOM file.
-   - `characterInput`: The input for the main character.
-   - `moviePreview`: The movie preview section.
-   - `slideList`: The list of slides.
-   - `slide-{id}`: The individual slide elements.
-   - `slidePart-{id}`: The individual slide part elements.
-   - `settings-{id}`: The settings for slides and their parts.
-   - `renderButton`: The render button.
-   - `progressBar`: The progress bar.
+4. "GedcomContext": This is a context file that is used to share methods and data across the application. It is used in the "_app.js", "index.js", and "gedcomProcessor.js" files.
 
-4. Message Names:
-   - `UPLOAD_SUCCESS`: Message when GEDCOM file is successfully uploaded.
-   - `CHARACTER_SELECTED`: Message when main character is selected.
-   - `SLIDE_ADDED`: Message when a new slide is added.
-   - `SLIDE_UPDATED`: Message when a slide is updated.
-   - `RENDER_STARTED`: Message when movie rendering starts.
-   - `RENDER_PROGRESS`: Message for updating render progress.
-   - `RENDER_COMPLETED`: Message when movie rendering is completed.
+5. "Layout": This is a component that wraps the main content of the page and includes common elements like the Navbar and Footer. It is used in the "index.js" and "_app.js" files.
 
-5. Function Names:
-   - `uploadGedcom`: Function to handle GEDCOM file upload.
-   - `selectCharacter`: Function to handle main character selection.
-   - `addSlide`: Function to add a new slide.
-   - `updateSlide`: Function to update a slide.
-   - `startRender`: Function to start movie rendering.
-   - `updateRenderProgress`: Function to update render progress.
-   - `completeRender`: Function to handle render completion.
+6. "Navbar" and "Footer": These are components that are used in the "Layout.js" file.
+
+7. "processGedcomData": This is a function defined in the "gedcomProcessor.js" file and used in the "GedcomContext.js" file.
+
+8. "useGedcom": This is a custom hook that is used to access the GedcomContext. It is used in the "index.js" and "_app.js" files.
+
+9. "getServerSideProps": This is a Next.js function used for server-side rendering. It is used in the "index.js" file.
+
+10. "API Routes": These are routes that handle server-side processing. The "hello.js" file is an example of an API route.
+
+11. "package.json": This file contains metadata about the app like its dependencies. It is used by npm to install the correct versions of the dependencies.
